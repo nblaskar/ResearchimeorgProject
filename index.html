@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesom CSS -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ResearChime</title>
+  </head>
+  <body>
+    <!-- Nav Section Start -->
+    <header class="header">
+        <div class="">
+          <nav class="nav" >
+            <!--logo-->
+            <a class="logo_img" href="index.html">
+              <img width="230px" height="50px" src="images/Logo.png" alt="logo" />
+            </a>
+            <!--toggle icons-->
+            <div class="menu-toggle_bar">
+              <span onclick="openNav()">&#9776;</span>
+            </div>
+  
+            <!-- Menu List -->
+            <ul class="nav_list">
+              <li class="nav_link active"><a href="#Home">Home</a></li>
+              <li class="nav_link"><a href="#Services">Services</a></li>
+              <li class="nav_link"><a href="#Contact">Contact</a></li>
+              <li class="nav_links more_dropdown" id="show">
+                More...
+                <ul class="dropdown_list">
+                  <li class="dropdown_link" id="hide">
+                    <a href="covid_19.html">COVID 19 Innovations in India</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+    
+      </div>
+      <div class="shutter" id="shutter">
+        <div class="menu-toggle_cross" id="menu-toggle_cross">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+        </div>
+        <ul class="shutter_list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li><a href="covid_19.html">COVID 19 Innovations in ...</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Nav Section End -->
+    <!-- Banner Section Start -->
+    <section class="banner" id="Home">
+      <div class="banner_container">
+        <p class="banner_message">Solutions for the research world</p>
+        <button class="get_started_btn">Get Started</button>
+      </div>
+    </section>
+    <!-- Banner Section End -->
+    <div class="blank_space"></div>
+
+    <!-- Our Services Start -->
+    <div class="services" id="Services">
+      <h1>OUR SERVICES</h1>
+      <div class="all_cards">
+        <div class="card_container">
+          <!-- Card-1 Start -->
+          <div class="card">
+            <div
+              class="inner_card_content"
+              onmouseover="card1MessageIn()"
+              onmouseout="card1MessageOut()"
+            >
+              <div class="tag_data" id="tag_data1">
+                <hr />
+
+                <p>Technology</p>
+                <br />
+                <a href="technology.html">More...</a>
+              </div>
+              <div class="content_data" id="content_data1">
+                <a href="technology.html">
+                  <p>
+                    Smartphone redefined the whole "product" ecosystem. Smart
+                    solutions involving Internet of Things, AI and Platform
+                    development require complex tech deployment. Where to start?
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card-1 End -->
+          <!-- Card-2 Start -->
+          <div class="card" id="card2">
+            <div
+              class="inner_card_content"
+              onmouseover="card2MessageIn()"
+              onmouseout="card2MessageOut()"
+            >
+              <div class="tag_data" id="tag_data2">
+                <hr />
+
+                <p>Research</p>
+                <br />
+                <a href="research_strategy.html">More...</a>
+              </div>
+              <div class="content_data" id="content_data2">
+                <a href="research_strategy.html">
+                  <p>
+                    Cancer, Quantum Computing, Artificial Intelligence, Cyber
+                    security, etc require collaboration between scientists from
+                    different domains. sometimes its transnational. Are you
+                    equipped? Researchime can help you.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card-2 End -->
+        </div>
+      </div>
+      <div class="all_cards">
+        <div class="card_container">
+          <!-- Card-3 Start -->
+          <div class="card" id="card3">
+            <div
+              class="inner_card_content"
+              onmouseover="card3MessageIn()"
+              onmouseout="card3MessageOut()"
+            >
+              <div class="tag_data" id="tag_data3">
+                <hr />
+
+                <p>Commercialization</p>
+                <br />
+                <a href="commercialization.html">More...</a>
+              </div>
+              <div class="content_data" id="content_data3">
+                <a href="commercialization.html">
+                  <p>
+                    University patented your billion dollar idea with an
+                    expectation that there will be buyers - a century old
+                    disappointing concept. How you take this solution to the
+                    market? Where to find investors?
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Card-3 End -->
+
+          <!-- Card-4 Start -->
+          <div class="card" id="card4">
+            <div class="inner_card_content">
+              <div class="tag_data" id="more_btn">
+                <a href="">More...</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card-4 End -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Services End -->
+    <!-- Contact Section Start -->
+    <div class="contact" id="Contact">
+      <h1>CONTACT US</h1>
+      <div class="form_card">
+        <form action="">
+          <div class="form_container">
+            <div class="forms">
+              <div class="line1">
+                <input type="text" placeholder="First Name" />
+                <input type="text" placeholder="Last Name" />
+              </div>
+              <div class="line2">
+                <input type="text" placeholder="Email" />
+                <input type="text" placeholder="Phone" />
+              </div>
+              <div class="line3">
+                <textarea
+                  placeholder="Type your message here..."
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea
+                ><br />
+                <button class="submit_btn" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="bottom_space" class="blank_space"></div>
+
+    <!-- Contact Section End -->
+    <!-- Start Scroll Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <!-- End Scroll Button -->
+
+
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="footer">
+        <div class="left">
+          <p>© 2020 Researchime </br>Developed by FiCity</p>
+        </div>
+        <div class="right">
+          <a href="https://www.linkedin.com/in/Shashaanka/"
+            >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Font Awesom JS -->
+    <script src="js/all.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
